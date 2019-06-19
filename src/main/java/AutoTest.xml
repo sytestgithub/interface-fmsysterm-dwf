@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name='suiteName'>
+	<test verbose="2" preserve-order="true" name="test">
+		<classes>
+		<!-- v1.0财务流程case -->
+<!--  
+<class name="com.daojia.qa.dwf.budgetSupplementFormFlow"></class>
+				<class name="com.daojia.qa.dwf.dailyRepaymentFormFlow"></class>
+					<class name="com.daojia.qa.dwf.personalBorrowFormFlow"></class>
+						<class name="com.daojia.qa.dwf.refundFormFlow"></class>
+						<class name="com.daojia.qa.dwf.travelApplyFormFlow"></class> 
+					    <class name="com.daojia.qa.dwf.travelRepaymentFormFlow"></class>
+-->  
+				
+				<!-- 接口测试case -->	
+				
+				  	<class name="com.daojia.qa.dwf.Getbuttons"></class>
+					<class name="com.daojia.qa.dwf.FormOfGetFormBaseInfo"></class>			
+					<class name="com.daojia.qa.dwf.BudgetServiceOfGetListByCondition"></class>
+					<class name="com.daojia.qa.dwf.BudgetServiceOfCheckBudgetImport"></class>
+					<class name="com.daojia.qa.dwf.BudgetServiceOfCheckBudgetAmount"></class> 
+				    <class name="com.daojia.qa.dwf.CostCenterServiceOfGetListByNameOrPinyin"></class>	
+				  <class name="com.daojia.qa.dwf.checkBudgetForTravelRepayment"></class> 
+				    <!-- 6个流程测试 -->
+				
+				    <class name="com.daojia.qa.dwf.budgetSupplementFormNewFlow"></class>
+				    <class name="com.daojia.qa.dwf.dailyRepaymentFormNewFlow"></class>
+				    <class name="com.daojia.qa.dwf.personalBorrowFormNewFlow"></class>
+				    <class name="com.daojia.qa.dwf.refundFormNewFlow"></class>
+				    <class name="com.daojia.qa.dwf.travelApplyFormNewFlow"></class>
+				    <class name="com.daojia.qa.dwf.travelRepaymentFormNewFlow"></class>
+		  
+			        <!-- 6个流程测试 -->
+			            <!-- 6个单据提交测试 -->
+			              
+			         <class name="com.daojia.qa.dwf.submitTravelRepaymentForm"></class>
+			         <class name="com.daojia.qa.dwf.submitTravelApplyForm"></class>
+			         <class name="com.daojia.qa.dwf.submitPersonalBorrowForm"></class>
+			         <class name="com.daojia.qa.dwf.submitRefundForm"></class>
+			         <class name="com.daojia.qa.dwf.submitDailyRepaymentForm"></class>
+			         <class name="com.daojia.qa.dwf.submitBudegtSupplementForm"></class>
+			          	      
+			           
+			           <class name="com.daojia.qa.dwf.saveTravelRepaymentForm"></class>
+			         <class name="com.daojia.qa.dwf.saveTravelApplyForm"></class>
+			         <class name="com.daojia.qa.dwf.savePersonalBorrowForm"></class>
+			         <class name="com.daojia.qa.dwf.saveRefundForm"></class>
+			         <class name="com.daojia.qa.dwf.saveDailyRepaymentForm"></class>
+			         <class name="com.daojia.qa.dwf.saveBudegtSupplementForm"></class>
+			        
+		</classes>
+	</test>
+	<listeners>
+		<listener class-name="com.bj58.daojia.qa.report.HTMLReporter"></listener>
+	</listeners>
+</suite>

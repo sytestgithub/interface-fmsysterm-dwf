@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cases>
+	<case name="getBillTradeSerial_Test" isOffline="true">
+		<row>
+			<data key="description" type="string" value="正常数据" />
+			<data key="id" type="long" value="579868888613384192" />
+			<data key="isValidData" type="boolean" value="true" />
+		</row>
+		<row>
+			<data key="description" type="string" value="id为null" />
+			<data key="id" type="long" />
+			<data key="isValidData" type="boolean" value="false" />
+		</row>
+		<row>
+			<data key="description" type="string" value="不存在的id" />
+			<data key="id" type="long" value="30227731134437" />
+			<data key="isValidData" type="boolean" value="false" />
+		</row>
+		<row>
+			<data key="description" type="string" value="流水ID为0" />
+			<data key="id" type="long" value="0" />
+			<data key="isValidData" type="boolean" value="false" />
+		</row>
+		<row>
+			<data key="description" type="string" value="流水ID为负" />
+			<data key="id" type="long" value="-5" />
+			<data key="isValidData" type="boolean" value="false" />
+		</row>
+	</case>
+	<case name="getBillTradeSerial_Test" isOffline="false">
+		<row>
+			<data key="description" type="string" value="id为null" />
+			<data key="id" type="long" />
+			<data key="isValidData" type="boolean" value="false" />
+		</row>
+		<row>
+			<data key="description" type="string" value="不存在的id" />
+			<data key="id" type="long" value="30227731134437" />
+			<data key="isValidData" type="boolean" value="false" />
+		</row>
+		<row>
+			<data key="description" type="string" value="流水ID为0" />
+			<data key="id" type="long" value="0" />
+			<data key="isValidData" type="boolean" value="false" />
+		</row>
+		<row>
+			<data key="description" type="string" value="流水ID为负" />
+			<data key="id" type="long" value="-5" />
+			<data key="isValidData" type="boolean" value="false" />
+		</row>
+	</case>
+	<case name="getType_Test" isOffline="true">
+		<row>
+			<data key="description" type="string" value="正常数据" />
+			<data key="id" type="long" value="579868888613384192" />
+			<data key="isValidData" type="boolean" value="true" />
+			<data key="isValidData" type="int" value="4" />
+			<data key="isValidData" type="short" value="1" />
+			<data key="isValidData" type="float" value="34.5" />
+			<data key="isValidData" type="byte" value="2" />
+			<data key="isValidData" type="char" value="true" />
+			<data key="isValidData" type="double" value="45.89" />
+			<data key="isValidData" type="" value="45.89" />
+			<data key="isValidData" value="45.89" />
+			<data key="isValidData" type="double" />
+		</row>
+	</case>
+</cases>
